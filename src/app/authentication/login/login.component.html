@@ -1,0 +1,16 @@
+<div class="login">
+  <div name="loginForm" class="login-container" [ngClass]="{'invalid-form': sucessfulLogin}" novalidate>
+    <div *ngIf="sucessfulLogin" class="login-error_msg">
+      Please enter a valid username/password
+    </div>
+    <div class="input-container">
+      <label class="label">Username</label>
+      <input name="username" placeholder="Enter email" type="email" required>
+    </div>
+    <div class="input-container">
+      <label class="label">Password</label>
+      <input name="password" placeholder="Enter password" type="password" required>
+    </div>
+    <button class="btn-ghost-blue login-button" (click)="login()"> Sign In </button>
+  </div>
+</div>

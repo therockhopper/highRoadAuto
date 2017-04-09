@@ -1,0 +1,19 @@
+<div class="nav-bar" id="navBar">
+  <div class="hamburger" tabindex="0" aria-label="open and close sidebar menu" (click)="toggleHamburger()" [ngClass]="{'hamburger__open': openHamburger}">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div id="hamburgerMenu" class="hamburger__menu" *ngIf="openHamburger" (blur)="toggleHamburger(false)">
+    <button tabindex="0" aria-label="Go to Create Type Page" (click)="toggleHamburger(false)">Create Type</button>
+    <button tabindex="0" aria-label="Go to Manage Types page" (click)="toggleHamburger(false)">Manage Types</button>
+  </div>
+  <a ui-sref="ap.Dashboard" aria-label="Go to Survey Portal Dashboard" tabindex="0" class="nav-bar__logo">Survey Portal</a>
+  <div class="nav-bar__links">
+    <button tabindex="0" aria-label="Go to Create Type Page" class="btn-nav">Create Type</button>
+    <button tabindex="0" aria-label="Go to Manage Types page" class="btn-nav">Manage Types</button>
+  </div>
+  <div class="nav-bar__user">
+    <img tabindex="0" alt="Profile Picture">
+  </div>
+</div>

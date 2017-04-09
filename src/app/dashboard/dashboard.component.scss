@@ -1,0 +1,45 @@
+@import '../../variables';
+@import '../../mixins';
+
+.dashboard {
+
+  &-theater {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: #fff;
+    padding-top: calc(#{$nav-height} + 1rem);
+    padding-bottom: 1rem;
+    background-color: $primary-color;
+    background-size: cover;
+
+    @include tablet {
+      height: 60vh; 
+    }
+
+    &__info {
+      max-width: 40vw;
+
+      &-buttons {
+        display: flex;
+        flex-direction: row;
+
+        button {
+          height: 100%;
+          width: 100%;
+
+          &:nth-of-type(1) {
+            margin-right: 1rem;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  &-container {
+
+  }
+
+}
