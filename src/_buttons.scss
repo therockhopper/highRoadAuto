@@ -4,7 +4,7 @@
   background: none;
   border: none;
   color: #fff;
-  border-bottom: 3px solid $primary-color;
+  border-bottom: 3px solid $primary;
   transition: border .15s ease-in;
 
   &:hover {
@@ -49,10 +49,12 @@
 
 .btn-theater {
   height: 100%;
+  max-height: 4rem;
   color: #fff;
-  border-color: #fff;
-  border-radius: 3rem;
-
+  border: none;
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: $secondary-dark;
 }
 
 .btn-chip {

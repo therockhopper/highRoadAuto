@@ -6,39 +6,83 @@
   &-theater {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
     color: #fff;
     padding-top: calc(#{$nav-height} + 1rem);
     padding-bottom: 1rem;
-    background-color: $primary-color;
+    background-color: $primary;
     background-size: cover;
 
-    @include tablet {
-      height: 60vh; 
+    h1, span {
+      max-width: 80vw;
+      text-align: center;
+      margin: 1rem 0;
     }
 
-    &__info {
-      max-width: 40vw;
-
-      &-buttons {
-        display: flex;
-        flex-direction: row;
-
-        button {
-          height: 100%;
-          width: 100%;
-
-          &:nth-of-type(1) {
-            margin-right: 1rem;
-          }
-        }
-
-      }
+    button {
+      margin-top: 2rem;
     }
 
   }
 
   &-container {
+
+    &__cta {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      color: $primary-text-color;
+      background-color: $secondary;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+
+      .info {
+        max-width: 17rem;
+        margin: 0 1rem;
+        text-align: center;
+
+        h3 {
+          padding: 1rem 0;
+        }
+      }
+
+    }
+
+    &__location {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      height: 90vh;
+
+      &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $secondary-text-color;
+
+        h2 {
+          text-align: center;
+          margin: 2rem 0;
+        }
+
+        ul {
+          list-style: none;
+
+          li {
+            text-align: center;
+            margin: .5rem 0;
+          }
+        }
+
+      }
+
+      &-map {
+      }
+    }
 
   }
 

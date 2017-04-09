@@ -5,8 +5,8 @@
     </svg> 
   </div>
   <div class="page-wrap">
-    <pc-nav-bar *ngIf="authService.isLoggedIn"></pc-nav-bar>
+    <app-nav-bar *ngIf="authService.isLoggedIn"></app-nav-bar>
     <router-outlet></router-outlet>
   </div>
-  <pc-footer class="site-footer"></pc-footer>
+  <app-footer class="site-footer"></app-footer>
 </div>
