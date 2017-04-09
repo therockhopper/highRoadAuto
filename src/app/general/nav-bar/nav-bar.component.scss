@@ -6,7 +6,7 @@
   position: fixed;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   height: $nav-height;
   width: 100vw;
@@ -129,19 +129,6 @@
     button {
       margin: 0 .5rem;
       cursor: pointer;
-    }
-  }
-
-  &__user {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2rem;
-
-    img {
-      max-height: $nav-height - 1rem;
-      border-radius: 3rem;
-      float: left;
     }
   }
 
