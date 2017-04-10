@@ -14,11 +14,24 @@
     padding-bottom: 1rem;
     background-color: $primary;
     background-size: cover;
+    background-image: url('../../assets/dashboard_cover.jpg');
 
     h1, span {
       max-width: 80vw;
       text-align: center;
       margin: 1rem 0;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      @include desktop {
+        font-size: 7rem;
+      }
+    }
+
+    span {
+      font-size: 2rem;
     }
 
     button {
@@ -31,17 +44,23 @@
 
     &__cta {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      align-items: center;
       justify-content: space-around;
+      min-height: 20rem;
       width: 100%;
       color: $primary-text-color;
       background-color: $secondary;
       padding-top: 3rem;
       padding-bottom: 3rem;
 
+      @include tablet {
+        flex-direction: row;
+      }
+
       .info {
         max-width: 17rem;
-        margin: 0 1rem;
+        margin: 1.5rem 0;
         text-align: center;
 
         h3 {
@@ -54,11 +73,18 @@
     &__location {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       background-color: #fff;
       height: 90vh;
 
+      @include desktop {
+        flex-direction: row;
+      }
+
       &-text {
         display: flex;
+        flex: 50%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -81,6 +107,27 @@
       }
 
       &-map {
+        position: relative;
+        flex: 50%;
+        height: 50%;
+        width: 50%;
+        margin: 2rem 0;
+
+        @include desktop {
+          margin-top: 0;
+        }
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          @include desktop {
+            width: 50%;
+          }
+        }
       }
     }
 
