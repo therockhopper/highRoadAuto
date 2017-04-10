@@ -4,6 +4,7 @@
 .app-footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: $footer-height;
   background-color: $primary;
   color: $secondary-text-color;
@@ -12,18 +13,23 @@
     flex-direction: row;
   }
 
-  ul {
-    list-style: none; 
-    margin: 2rem 0;
+  .social {
+    margin: 1rem;
 
-    li {
-      margin: .5rem 1rem; 
-
-      a {
-        color: $secondary-text-color;
-      }
+    a {
+      color: $secondary-text-color;
     }
   }
 
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      margin: .5rem 0;
+      color: $secondary-text-color;
+    }
+  }
 
 }
