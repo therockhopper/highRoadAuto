@@ -1,3 +1,5 @@
+@import './variables';
+
 .btn-nav {
   height: calc(100% - 3px);
   font-size: 1.6rem;
@@ -8,90 +10,11 @@
   transition: border .15s ease-in;
 
   &:hover {
-    border-color: #12A3B4; 
+    border-color: $secondary; 
   }
 }
 
-.btn-ghost {
-  height: 5rem;
-  width: 100%;
-  max-width: 27rem;
-  color: #000;
-  font-size: 1.6rem;
-  background-color: transparent; 
-  border: solid 1px #000;
-  cursor: pointer; 
-
-  &:disabled {
-    opacity: .5;
-    cursor: default; 
-  }
-
+.nav_active {
+  border-color: $secondary; 
 }
 
-.btn-ghost-blue {
-  @extend .btn-ghost;
-  color: $blue-text;
-  border-color: $blue-text;
-}
-
-.btn-ghost-red{
-  @extend .btn-ghost;
-  color: $red-text;
-  border-color: $red-text;
-}
-
-.btn-ghost-white {
-  @extend .btn-ghost;
-  color: #fff;;
-  border-color: #fff;
-}
-
-.btn-theater {
-  height: 100%;
-  max-height: 4rem;
-  color: #fff;
-  border: none;
-  padding: 1rem;
-  border-radius: .5rem;
-  background-color: $secondary-dark;
-}
-
-.btn-chip {
-  height: 2.5rem;
-  width: 100%;
-  max-width: 10rem;
-  border-radius: 3rem;
-  color: #000;
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-align: center;
-  background-color: transparent; 
-  border: solid 1px #000;
-  cursor: pointer;
-}
-
-.btn-text-arrow {
-  height: 2.5rem;
-  width: 100%;
-  max-width: 10rem;
-  color: #000;
-  font-size: 1.6rem;
-  text-align: center;
-  border: none;
-  background-color: transparent; 
-  cursor: pointer;
-
-  span {
-    font-size: 2.5rem; 
-  }
-}
-
-.btn-text-arrow-blue {
-  @extend .btn-text-arrow;
-  color: #12A3B4;
-
-  &:after {
-    color: #12A3B4; 
-  }
-}

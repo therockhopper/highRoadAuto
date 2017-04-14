@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { ClarityModule } from 'clarity-angular';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -8,6 +9,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { AuthenticationModule } from './authentication/authentication.module';
+import { InventoryModule } from './inventory/inventory.module';
 import { GeneralModule } from './general/general.module';
 
 @NgModule({
@@ -17,10 +19,12 @@ import { GeneralModule } from './general/general.module';
   ],
   imports: [
     BrowserModule,
+    ClarityModule.forRoot(),
     FormsModule,
     HttpModule,
     AppRoutingModule,
     AuthenticationModule,
+    InventoryModule,
     GeneralModule,
   ],
   providers: [],
