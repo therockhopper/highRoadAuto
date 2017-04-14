@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { AuthenticationModule } from './authentication/authentication.module';
+import { InventoryModule } from './inventory/inventory.module';
 import { GeneralModule } from './general/general.module';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { GeneralModule } from './general/general.module';
     HttpModule,
     AppRoutingModule,
     AuthenticationModule,
+    InventoryModule,
     GeneralModule,
   ],
   providers: [],
