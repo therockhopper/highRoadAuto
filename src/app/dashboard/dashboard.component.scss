@@ -44,8 +44,13 @@
     }
 
     span {
-      max-width: 80rem;
-      font-size: 2rem;
+      max-width: 70rem;
+      font-size: 1.4rem;
+      margin: 0 2.5rem;
+
+      @include tablet {
+        font-size: 2rem;
+      }
     }
 
     button {
@@ -61,7 +66,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
       min-height: 20rem;
       width: 100%;
       color: $primary-text-color;
@@ -71,17 +75,23 @@
 
       @include tablet {
         flex-direction: row;
+        align-items: start;
       }
 
       .info {
-        max-width: 17rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 1.5rem 0;
         text-align: center;
+        flex-grow: 1;
 
         h3 {
           padding: 1rem 0;
           color: #fff;
         }
+
+        p { max-width: 17rem; }
       }
 
     }
@@ -93,6 +103,7 @@
       justify-content: center;
       background-color: #fff;
       height: 90vh;
+      padding-top: 2rem;
 
       @include desktop {
         flex-direction: row;
@@ -105,6 +116,11 @@
         justify-content: center;
         align-items: center;
         color: $secondary-text-color;
+        padding-top: 2rem;
+
+        @include desktop {
+          padding-top: 0;
+        }
 
         h2 {
           text-align: center;
