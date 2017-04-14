@@ -5,10 +5,10 @@
     <div></div>
   </div>
   <div id="hamburgerMenu" class="hamburger__menu" *ngIf="openHamburger" (blur)="toggleHamburger(false)">
-    <button tabindex="0" aria-label="Go to Create Type Page" (click)="toggleHamburger(false)">Shop</button>
+    <button tabindex="0" routerLink="/shop" (click)="toggleHamburger(false)">Shop</button>
   </div>
-  <a ui-sref="ap.Dashboard" aria-label="Go to Survey Portal Dashboard" tabindex="0" class="nav-bar__logo">High Road Auto</a>
+  <a routerLink="" class="nav-bar__logo">High Road Auto</a>
   <div class="nav-bar__links">
-    <button tabindex="0" aria-label="Go to Manage Types page" class="btn-nav">Shop</button>
+    <button routerLink="/shop" routerLinkActive="nav_active" class="btn-nav">Shop</button>
   </div>
 </div>

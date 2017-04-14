@@ -8,28 +8,27 @@
   height: $footer-height;
   background-color: $primary;
   color: $secondary-text-color;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   @include desktop {
-    flex-direction: row;
+    //flex-direction: row;
   }
 
-  .social {
-    margin: 1rem;
+  a {
+    margin: .5rem;
+    color: $secondary-text-color;
+    cursor: pointer;
 
-    a {
-      color: $secondary-text-color;
+    &:hover, &:active {
+      color: #fff;
     }
   }
 
-  .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .fb {
+  }
 
-    a {
-      margin: .5rem 0;
-      color: $secondary-text-color;
-    }
+  .map{
   }
 
 }
