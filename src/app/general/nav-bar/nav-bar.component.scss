@@ -13,6 +13,7 @@
   top: 0;
   color: $primary-text-color;
   background-color: transparent;
+  z-index: 100;
 
   .hamburger {
     display: flex;
