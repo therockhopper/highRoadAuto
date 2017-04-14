@@ -110,6 +110,11 @@
     cursor: pointer;
     text-decoration: none;
     white-space: nowrap;
+    color: #fff;
+
+    &:hover {
+      color: #eaeaea;
+    }
   }
 
   &__links {

@@ -1,3 +1,5 @@
+@import './variables';
+
 .btn-nav {
   height: calc(100% - 3px);
   font-size: 1.6rem;
@@ -8,7 +10,11 @@
   transition: border .15s ease-in;
 
   &:hover {
-    border-color: #12A3B4; 
+    border-color: $secondary; 
   }
+}
+
+.nav_active {
+  border-color: $secondary; 
 }
 
