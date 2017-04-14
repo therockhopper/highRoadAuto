@@ -1,0 +1,11 @@
+@import '../../../variables';
+@import '../../../mixins';
+
+.shop {
+  padding-top: calc(#{$nav-height} + 1rem);
+  text-align: center;
+
+  h1 {
+    color: #fff;
+  }
+}
