@@ -23,7 +23,7 @@ const loginRoutes: Routes = [
   ],
   providers: [
     InventoryService,
-  ]
+  ],
   exports: [
     RouterModule,
     ShopComponent,
