@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class InventoryService {
 
-  private inventoryUrl: string = 'highroadauto.ca/wp-json/wp/v2/posts'
+  private inventoryUrl: string = 'http://www.highroadauto.ca/wp-json/wp/v2/posts'
 
   constructor (private http: Http) {}
 
@@ -19,7 +19,8 @@ export class InventoryService {
 
   private extractData(res: Response) {
     let body = res.json();
-    return body.data || { };
+    console.log(body)
+    return body || { };
   }
 
   private handleError (error: Response | any) {
