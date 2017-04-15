@@ -5,10 +5,12 @@
     <div></div>
   </div>
   <div id="hamburgerMenu" class="hamburger__menu" *ngIf="openHamburger" (blur)="toggleHamburger(false)">
+    <button tabindex="0" routerLink="/" (click)="toggleHamburger(false)">Home</button>
     <button tabindex="0" routerLink="/shop" (click)="toggleHamburger(false)">Shop</button>
   </div>
   <a routerLink="" class="nav-bar__logo">High Road Auto</a>
   <div class="nav-bar__links">
+    <button routerLink="/" class="btn-nav">Home</button>
     <button routerLink="/shop" routerLinkActive="nav_active" class="btn-nav">Shop</button>
   </div>
 </div>
