@@ -4,6 +4,7 @@ import { ClarityModule } from 'clarity-angular';
 import { RouterModule, Routes } from '@angular/router';
 import { InventoryService } from './inventory.service';
 import { ShopComponent } from './shop/shop.component';
+import { ShopNavComponent } from './shop-nav/shop-nav.component';
 
 const loginRoutes: Routes = [
   {
@@ -20,6 +21,7 @@ const loginRoutes: Routes = [
   ],
   declarations: [
     ShopComponent,
+    ShopNavComponent,
   ],
   providers: [
     InventoryService,

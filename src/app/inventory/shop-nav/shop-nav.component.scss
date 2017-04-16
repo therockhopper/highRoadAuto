@@ -1,0 +1,13 @@
+.shop-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .search-bar {
+
+    input {
+      color: #fff;
+    }
+  }
+}

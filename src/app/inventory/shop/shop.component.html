@@ -1,4 +1,11 @@
 <div class="shop">
-  <h1>Our Online Store is Currently Empty</h1>
-  <clr-icon shape="sad-face" size="36"></clr-icon>
+
+  <div class="inventory-nav"></div>
+  <app-shop-nav></app-shop-nav>
+  <div class="inventory-list"></div>
+
+  <div class="empty-store" *ngIf="!inventory">
+    <h1>Our Online Store is Currently Empty</h1>
+    <clr-icon shape="sad-face" size="36"></clr-icon>
+  </div>
 </div>
